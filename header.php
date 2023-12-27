@@ -44,28 +44,10 @@ $title_classes = new ClassList('font-bold text-3xl md:text-6xl')
             <div class="flex justify-between items-center w-full lg:w-auto gap-10">
                 <!-- Logo -->
                 <div class="flex gap-5">
-                    <?php if ( has_custom_logo() ) : ?>
-                    <div class="rounded-lg shadow-slate-500 shadow-lg">
-                            <div class="overflow-hidden rounded-lg">
-                                <?php the_custom_logo(); ?>
-                            </div>
-                        </div>
-                    <?php endif; ?>
-                    <div class="flex flex-col justify-center">
-                        <?php if ($title) : ?>
-                            <?php if ( is_front_page() && !is_home() ) : ?>
-                                <h1
-                                    <?php $title_classes->render(); ?>
-                                ><?php echo $title; ?></h1>
-                            <?php else : ?>
-                                <p
-                                    <?php $title_classes->render(); ?>
-                                ><?php echo $title; ?></p>
-                            <?php endif; ?>
-                        <?php endif ?>
-                        <?php if ( $description && $show_title ) : ?>
-                            <p class="mt-3 text-xl"><?php echo $description; ?></p>
-                        <?php endif; ?>
+                    <div 
+                        class="flex flex-col justify-center dark:bg-neutral-400 -m-2 p-2 rounded"
+                    >
+                        <?php get_template_part('template-parts/header/logo'); ?>
                     </div>
                 </div>
 
