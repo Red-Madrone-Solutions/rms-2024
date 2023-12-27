@@ -2079,6 +2079,9 @@ select {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
+.wpforms-container .wpforms-field .wpforms-field-row:before {
+    content: none;
+  }
 .wp-block-buttons .wp-block-button.is-style-outline > .wp-block-button__link {
   display: inline-flex;
   align-items: center;
