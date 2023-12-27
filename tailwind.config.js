@@ -12,6 +12,14 @@ module.exports = {
       screens: {
         'md': '782px',
       },
+      margin: ({ theme }) => ({
+                  'section': `clamp(${theme('width.12')}, 2.294vw + 1.041rem, ${theme('width.32')})`,
+                'layer': `clamp(${theme('width.32')}, 2.294vw + 1.041rem, ${theme('width.56')})`,
+        }),
+            padding: ({ theme }) => ({
+                        'section': `clamp(${theme('width.12')}, 2.294vw + 1.041rem, ${theme('width.32')})`,
+                      'layer': `clamp(${theme('width.32')}, 2.294vw + 1.041rem, ${theme('width.56')})`,
+              }),
       colors: {
         primary: {
           DEFAULT: '#3B71CA',
