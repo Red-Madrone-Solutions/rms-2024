@@ -12,7 +12,37 @@
   }
 
   h2 {
-    @apply text-4xl font-medium mt-3 mb-3;
+    @apply text-4xl font-medium my-[0.5em];
+  }
+
+  h3 {
+    @apply text-xl font-medium mt-[0.5em];
+  }
+}
+
+.c-layer {
+  @apply my-24;
+}
+
+.c-section {
+  h2 {
+    @apply text-base font-semibold;
+  }
+
+  h3 {
+    @apply text-4xl font-medium text-balance;
+  }
+
+  h4 {
+    @apply text-xl font-medium mt-[0.5em];
+  }
+
+  p + p {
+    @apply mt-4;
+  }
+
+  .wp-block-group + .wp-block-group {
+    @apply mt-8;
   }
 }
 
@@ -40,7 +70,7 @@
   @apply mt-5;
 
   input[type="text"], input[type="tel"], input[type="email"], input[type="number"] {
-    @apply block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6;
+    @apply block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:bg-neutral-600 dark:text-gray-300;
   }
 
   select {
@@ -48,15 +78,15 @@
   }
 
   textarea {
-    @apply block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6;
+    @apply block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:bg-neutral-600 dark:text-gray-300;
   }
 
   .wpforms-field-label {
-    @apply block text-sm font-medium leading-6 text-gray-900;
+    @apply block text-sm font-medium leading-6 text-gray-900 dark:text-gray-100 mb-2;
   }
 
   .wpforms-field-sublabel {
-    @apply mt-1 text-sm leading-6 text-gray-600;
+    @apply mt-1 text-sm leading-6 text-gray-600 dark:text-gray-300;
   }
 
   .wpforms-field-divider {
