@@ -130,6 +130,12 @@ class Image {
         return wp_get_attachment_image($this->attachment_id, 'full', false, $attrs);
     }
 
+    public function fullUrl() : string
+    {
+        $this->loadSize();
+        return $this->url;
+    }
+
     public function render($classes = '') {
         if ( !empty($classes) ) {
             $this->classes .= ' ' . $classes;
