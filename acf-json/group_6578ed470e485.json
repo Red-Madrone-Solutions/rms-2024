@@ -1,0 +1,105 @@
+{
+    "key": "group_6578ed470e485",
+    "title": "Hero - Block",
+    "fields": [
+        {
+            "key": "field_6578ed47e1d3d",
+            "label": "Heading",
+            "name": "heading",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6578ed60e1d3e",
+            "label": "Description",
+            "name": "description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_658c505f6f465",
+            "label": "Bullets",
+            "name": "bullets",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Each row will be rendered as a separate bulleted-list item.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_658c4d607c367",
+            "label": "Rich Content",
+            "name": "rich_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "rms\/hero"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1703694478
+}

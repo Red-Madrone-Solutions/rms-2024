@@ -16,3 +16,8 @@ add_filter('body_class', function($classes) {
 // Push Yoast SEO metabox to bottom
 // Based on: https://gist.github.com/ramseyp/6920038
 add_filter( 'wpseo_metabox_prio', function() { return 'low'; } );
+
+add_action('init', function() {
+    register_block_type( __DIR__ . '/blocks/hero' );
+    register_block_type( __DIR__ . '/blocks/project' );
+});
